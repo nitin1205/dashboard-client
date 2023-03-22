@@ -7,6 +7,7 @@ import { useMemo } from 'react';
 import { themeSettings } from 'theme';
 import Dashboard from 'scenes/dashboard';
 import Layout from 'scenes/layout';
+import Products from 'scenes/products';
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -19,7 +20,8 @@ function App() {
           <Routes>
             <Route element={<Layout />}>
               <Route path='/' element={<Navigate to='/dashboard' replace /> } />
-              <Route path='/dashboard' element={<Dashboard to='/dashboard' /> } />
+              <Route path='/dashboard' element={<Dashboard /> } />
+              <Route path='/products' element={<Products /> } />
             </Route>
           </Routes>
         </ThemeProvider>
