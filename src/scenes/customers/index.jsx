@@ -49,6 +49,7 @@ const Customers = () => {
             flex: 0.5
         }
     ]
+    
     return (
         <Box
             m='1.5rem 2.5rem'
